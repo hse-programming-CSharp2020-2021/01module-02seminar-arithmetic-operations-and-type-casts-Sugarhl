@@ -25,27 +25,41 @@
  */
 
 using System;
+using System.Globalization;
 
-namespace Task_01 {
-	class Program {
-		static void Main(string[] args) {
-			// TODO : Сменить локаль на "ru-RU". 
+namespace Task_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // TODO : Сменить локаль на "ru-RU". 
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
 
-			double x;
-			// Ввод данных. 
-			x = double.Parse(Console.ReadLine());
+            double x;
+            // Ввод данных. 
+            x = double.Parse(Console.ReadLine());
 
-			// Вычисление и вывод данных.
-			Console.WriteLine($"{Function(x):f2}");
+            // Вычисление и вывод данных.
+            Console.WriteLine($"{Function(x):f2}");
+
+        }
+
+        static double Function(double x)
+        {
+            // TODO : Реализовать вычисление функции F(x).
+            return (12 * myPow(x, 4) + 9 * myPow(x, 3) - 3 * myPow(x, 2) + 2 * x - 4);
 
 		}
 
-		static double Function(double x) {
-			// TODO : Реализовать вычисление функции F(x).
-		}
-
-		static double myPow(double x, int pow) {
-			// TODO : Реализовать быстрое возведение в степень.
-		}
-	}
+        static double myPow(double x, int pow)
+        {
+            // TODO : Реализовать быстрое возведение в степень.
+            if (pow == 0) return 1;
+            if (pow % 2 == 1)
+                return x * myPow(x, pow - 1);
+            double sqrtx = myPow(x, pow / 2);
+            return sqrtx * sqrtx;
+        }
+    }
 }
