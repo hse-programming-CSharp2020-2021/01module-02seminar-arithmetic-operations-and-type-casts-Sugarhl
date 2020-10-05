@@ -23,20 +23,26 @@
  */
 
 using System;
+using System.Globalization;
+using System.Text;
 
 namespace Task_06 {
-	class Program {
-		static void Main(string[] args) {
+    class Program {
+        static void Main(string[] args) {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
 
-			double sum;
-			int percent;
-			// TODO : Считать вещественную и целочисленную переменную.
+            Console.OutputEncoding = Encoding.Unicode;
+            double sum;
+            int percent;
+            // TODO : Считать вещественную и целочисленную переменную.
+            double.TryParse(Console.ReadLine(), out sum);
+            int.TryParse(Console.ReadLine(), out percent);
+            // TODO : Рассчитать бюджет на игры.
+            double onComputerGames = (sum / 100) * percent;
 
-			// TODO : Рассчитать бюджет на игры.
-			double onComputerGames = aaaaaaaaaaaaaaaaaaaa;
-
-			// TODO : Вывести используя спецификаторы формата валюты результат. 
-			// (https://metanit.com/sharp/tutorial/7.5.php)
-		}
-	}
+            // TODO : Вывести используя спецификаторы формата валюты результат.
+            Console.WriteLine($"{onComputerGames:c}");
+            // (https://metanit.com/sharp/tutorial/7.5.php)
+        }
+    }
 }
