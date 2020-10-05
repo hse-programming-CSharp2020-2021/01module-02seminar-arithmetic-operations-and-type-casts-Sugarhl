@@ -36,6 +36,7 @@ namespace Task_03 {
         static void Main(string[] args) {
             // TODO : Сменить локаль на "ru-RU". 
             System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
+            System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
 
             double a, b, c;
             // TODO : Считать коэффициенты.
@@ -48,8 +49,8 @@ namespace Task_03 {
             // записать в результирующую строку complexRootsMessage.
             // А если корни есть, то записать их.
             string result = (discriminant > 0) ?
-                ((-b + Math.Sqrt(discriminant)) / 2 / a).ToString()
-                + ((-b + Math.Sqrt(discriminant)) / 2 / a).ToString() : complexRootsMessage;
+                $"{((-b + Math.Sqrt(discriminant)) / 2 / a):f2}" + 
+                $"{((-b + Math.Sqrt(discriminant)) / 2 / a):f2}" : complexRootsMessage;
 
             Console.WriteLine(result);
         }

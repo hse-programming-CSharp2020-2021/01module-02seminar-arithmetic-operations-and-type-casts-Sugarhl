@@ -39,7 +39,7 @@ namespace Task_02 {
         static int MaxPermutation(int x) {
             // TODO : Получить цифры числа используя арифметические операции.
             int firstDigit = x / 100,
-                secondDigit = x / 10,
+                secondDigit = (x % 100) / 10,
                 thirdDigit = x % 10;
             // TODO : брать новое число и вернуть его. 
             var mx = Math.Max(firstDigit, Math.Max(secondDigit, thirdDigit));
