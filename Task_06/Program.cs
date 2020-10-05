@@ -33,7 +33,7 @@ namespace Task_06 {
 			// TODO : Считать вещественную и целочисленную переменную.
 
 			// TODO : Рассчитать бюджет на игры.
-			double onComputerGames = ;
+			double onComputerGames = aaaaaaaaaaaaaaaaaaaa;
 
 			// TODO : Вывести используя спецификаторы формата валюты результат. 
 			// (https://metanit.com/sharp/tutorial/7.5.php)
