@@ -37,7 +37,7 @@ namespace Task_06 {
             double.TryParse(Console.ReadLine(), out sum);
             int.TryParse(Console.ReadLine(), out percent);
             // TODO : Рассчитать бюджет на игры.
-            double onComputerGames = (sum / 100) * percent;
+            decimal onComputerGames = ((decimal)sum / 100) * percent;
 
             // TODO : Вывести используя спецификаторы формата валюты результат.
             Console.WriteLine($"{onComputerGames:c}");

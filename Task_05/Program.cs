@@ -50,7 +50,7 @@ namespace Task_05 {
             // или площадь треугольника.
             var mx = Math.Max(a, Math.Max(b, c));
             var perimeter = a + b + c;
-            string result = (perimeter - 2 * mx > 0) ? Square(a, b, c).ToString() : notTriangleMessage;
+            string result = (perimeter - 2 * mx > 0) ? $"{Square(a, b, c):f3}" : notTriangleMessage;
 
 
             Console.WriteLine(result);
