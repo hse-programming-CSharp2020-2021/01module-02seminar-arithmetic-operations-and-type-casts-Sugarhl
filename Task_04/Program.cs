@@ -7,12 +7,12 @@
  * -------test_1-------
  * 1234
  * -------test_2-------
- * 4321
+ * 5669
  * --------------------
  * 
  * Формат выходных данных : 
  * -------test_1-------
- * 5669
+ * 4321
  * -------test_2-------
  * 9665
  * --------------------
@@ -39,7 +39,7 @@ namespace Task_4 {
             int secondDifit = x % 1000 / 100;
             int thirdDifit = x % 100 / 10;
             int fourthDifit = x % 10;
-            int answer = fourthDifit * 1000 + thirdDifit * 100 + secondDifit * 10 + fourthDifit;
+            int answer = fourthDifit * 1000 + thirdDifit * 100 + secondDifit * 10 + firstDifit;
             return answer;
         }
     }

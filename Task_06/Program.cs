@@ -29,7 +29,6 @@ using System.Text;
 namespace Task_06 {
     class Program {
         static void Main(string[] args) {
-            System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
 
             Console.OutputEncoding = Encoding.Unicode;
             double sum;

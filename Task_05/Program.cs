@@ -37,6 +37,7 @@ namespace Task_05 {
         static void Main(string[] args) {
             // TODO : Сменить локаль на "ru-RU". 
             System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
+            System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
 
             double a, b, c;
             // TODO : Считать 3 стороны треугольника.
@@ -58,7 +59,7 @@ namespace Task_05 {
         static double Square(double a, double b, double c) {
             // TODO : Реализоать вычисление площади по формуле Герона. Ну или что-нибудь более извращённое 🙃.
             var perimeter = a + b + c;
-            return (perimeter / 2 * (perimeter / 2 - a) * (perimeter / 2 - b)
+            return Math.Sqrt(perimeter / 2 * (perimeter / 2 - a) * (perimeter / 2 - b)
                    * (perimeter / 2 - c));
         }
     }
