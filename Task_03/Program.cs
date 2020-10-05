@@ -50,7 +50,7 @@ namespace Task_03 {
             // А если корни есть, то записать их.
             string result = (discriminant > 0) ?
 				$"{((-b + Math.Sqrt(discriminant)) / 2 / a):f2}" + Environment.NewLine + 
-                $"{((-b + Math.Sqrt(discriminant)) / 2 / a):f2}" : complexRootsMessage;
+                $"{((-b - Math.Sqrt(discriminant)) / 2 / a):f2}" : complexRootsMessage;
 
             Console.WriteLine(result);
         }
