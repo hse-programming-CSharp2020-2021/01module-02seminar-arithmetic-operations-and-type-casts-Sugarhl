@@ -35,6 +35,7 @@ namespace Task_01
         {
             // TODO : Сменить локаль на "ru-RU". 
             System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
+            System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
 
             double x;
             // Ввод данных. 
