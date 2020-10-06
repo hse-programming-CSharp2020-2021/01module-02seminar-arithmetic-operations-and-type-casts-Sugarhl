@@ -255,7 +255,7 @@
       "setup": "csc Task_06/Program.cs",
       "run": "mono Program.exe",
       "input": "1300\r\n10",
-      "output": "$ 130.00",
+      "output": "$130.00",
       "comparison": "exact",
       "timeout": 10,
       "points": 1
@@ -265,7 +265,7 @@
       "setup": "csc Task_06/Program.cs",
       "run": "mono Program.exe",
       "input": "1000.50\r\n5",
-      "output": "$ 50.03",
+      "output": "$50.03",
       "comparison": "exact",
       "timeout": 10,
       "points": 1
@@ -275,7 +275,7 @@
       "setup": "csc Task_06/Program.cs",
       "run": "mono Program.exe",
       "input": "663.3\r\n0",
-      "output": "$ 0.00",
+      "output": "$0.00",
       "comparison": "exact",
       "timeout": 10,
       "points": 1
@@ -285,7 +285,7 @@
       "setup": "csc Task_06/Program.cs",
       "run": "mono Program.exe",
       "input": "101\r\n9",
-      "output": "$ 9.09",
+      "output": "$9.09",
       "comparison": "exact",
       "timeout": 10,
       "points": 1
@@ -295,7 +295,7 @@
       "setup": "csc Task_06/Program.cs",
       "run": "mono Program.exe",
       "input": "51.5\r\n2",
-      "output": "$ 1.03",
+      "output": "$1.03",
       "comparison": "exact",
       "timeout": 10,
       "points": 1
