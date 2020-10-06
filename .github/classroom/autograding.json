@@ -144,7 +144,7 @@
       "name": "Task_03-Test_05",
       "setup": "csc Task_03/Program.cs",
       "run": "mono Program.exe",
-      "input": "10\r\n0\r\n1,5",
+      "input": "10\r\n-8\r\n1,5",
       "output": "-0,30\r\n-0,50",
       "comparison": "exact",
       "timeout": 10,
@@ -242,7 +242,7 @@
     },
     {
       "name": "Task_05-Test_05",
-      "setup": "csc Task_05/Program.exe",
+      "setup": "csc Task_05/Program.cs",
       "run": "mono Program.cs",
       "input": "9,9\r\n4,9\r\n7,2",
       "output": "16,747",
@@ -272,7 +272,7 @@
     },
     {
       "name": "Task_06-Test_03",
-      "setup": "csc Task_06/Program.exe",
+      "setup": "csc Task_06/Program.cs",
       "run": "mono Program.exe",
       "input": "663.3\r\n0",
       "output": "$ 0.00",
