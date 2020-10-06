@@ -31,7 +31,6 @@ namespace Task_06 {
         static void Main(string[] args) {
             System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
             System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
-            Console.OutputEncoding = Encoding.Unicode;
 
             double sum;
             int percent;
